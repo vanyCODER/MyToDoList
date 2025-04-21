@@ -1,0 +1,160 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+background-color: #83A180;
+font-family: "Inter", sans-serif;
+}
+
+.container{
+max-width: 750px;
+display: flex;
+margin: 0 auto;
+flex-direction: column;
+}
+
+.title{
+font-size: 48px;
+font-weight: 700;
+width: fit-content;
+color: #FFFFFF;
+margin: 3rem auto 2rem;
+}
+
+.input{
+min-height: 86px;
+background: #FFFFFF;
+border-radius: 19px;
+padding: 1rem 1rem 1rem 6.25rem;
+margin-bottom: 77px;
+}
+
+.input__input{
+font-size: 36px;
+font-weight: 600;
+color: 	#333333;
+width: 437px;
+height: 44px;
+border: none;
+outline: none;
+}
+
+.input__input::placeholder {
+    font-size: 36px;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.input__button{
+margin-left: 60px;
+width: 112px;
+height: 56px;
+font-size: 36px;
+font-weight: 700;
+border-radius: 10px;
+border: none;
+color: #FFFFFF;
+background-color: #1558C4;
+}
+
+.input__button:hover {
+background-color: #0e4aa8;
+transform: translateY(-2px);
+box-shadow: 0 6px 12px rgba(21, 88, 196, 0.25);
+cursor: pointer;
+}
+
+.input__button:active {
+transform: translateY(1px);
+box-shadow: 0 2px 4px rgba(21, 88, 196, 0.3);
+}
+
+.tasks{
+width: 100%;
+min-height: 574px;
+background-color: #FFFFFF;
+border-radius: 19px;
+padding: 33px;
+}
+
+.tasks__item{
+list-style-type: none;
+font-size: 33px;
+font-weight: 700;
+line-height: 40px;
+color: 	#333333;
+display: flex;
+justify-content: space-between; /* Распределяет пространство между элементами */
+align-items: center; /* Выравнивает по вертикали */
+padding: 12px 20px;
+border-bottom: solid 1px grey;
+}
+
+.task-text{
+white-space: normal;
+word-break: break-word;
+flex-grow: 1;
+margin-right: 20px;
+}
+
+.tasks__buttons{
+display: flex;
+gap: 10px; /* Расстояние между кнопками */
+align-items: center;
+}
+
+.delete-icon{
+width: 30px;
+height: 30px;
+pointer-events: none;
+border: none;
+}
+
+.delete-btn {
+border: none;
+outline: none;
+background: none;
+padding: 4px;
+margin-left: 0;
+cursor: pointer;
+border-radius: 10px;
+transition: background-color 0.2s;
+}
+  
+.delete-btn:hover{
+background-color: rgba(255, 0, 0, 0.1); /* Легкий красный фон при наведении */
+}
+
+.delete-btn svg{
+width: 20px;
+height: 20px;
+fill: #ff4444; /* Цвет иконки */
+pointer-events: none; /* Чтобы клики работали на всей кнопке */
+}
+.delete-btn:hover svg{
+fill: #cc0000; 
+}
+    /* Изменение цвета при наведении */
+
+.done-btn{
+border: none;
+outline: none;
+background: none;
+padding: 4px;
+cursor: pointer;
+border-radius: 10px;
+transition: background-color 0.2s;
+}
+
+.done-btn:hover{
+background-color: rgba(169, 240, 151, 0.849); /* Легкий красный фон при наведении */;
+}
+
+.done-icon{
+width: 30px;
+height: 30px;
+pointer-events: none;
+border: none;
+}
+
